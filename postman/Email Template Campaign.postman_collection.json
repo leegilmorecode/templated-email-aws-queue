@@ -1,0 +1,40 @@
+{
+  "info": {
+    "_postman_id": "ce9715ee-f8ad-4d97-a3e0-5d0c8533e13d",
+    "name": "Email Template Campaign",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "752706"
+  },
+  "item": [
+    {
+      "name": "Create Campaign",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"scheduledDate\": \"2025-04-23T15:00:00Z\",\n  \"template\": \"black-friday-2025\",\n  \"campaignName\": \"Black Friday 2025\",\n  \"subject\": \"Black Friday 2025\",\n  \"fromAddress\": \"noreply@serverlessadvocate.com\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://{{url}}/api/v1/emails",
+          "protocol": "https",
+          "host": ["{{url}}"],
+          "path": ["api", "v1", "emails"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "url",
+      "value": "your-rest-id.execute-api.your-region.amazonaws.com",
+      "type": "default"
+    }
+  ]
+}

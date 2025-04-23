@@ -1,0 +1,8 @@
+{
+  "Item": {
+    "pk": { "S": "243a7a94-27d4-4893-8fe3-0ef8add98088" },
+    "firstName": { "S": "Lee" },
+    "lastName": { "S": "Gilmore" },
+    "email": { "S": "your.email@your-email-address.com" }
+  }
+}
